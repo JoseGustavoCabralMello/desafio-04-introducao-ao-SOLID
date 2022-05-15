@@ -19,7 +19,6 @@ class CreateUserUseCase {
       name,
       email,
     });
-    return userAlreadyExistis;
   }
 }
 
