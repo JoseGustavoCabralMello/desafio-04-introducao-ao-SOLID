@@ -15,7 +15,9 @@ class TurnUserAdminUseCase {
       throw new Error("User does not existi!");
     }
 
-    this.usersRepository.list();
+    const userAsAdmin = this.usersRepository.turnAdmin(user);
+
+    return userAsAdmin;
   }
 }
 
